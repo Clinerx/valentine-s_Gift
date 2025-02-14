@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    background-image: url("bg-love.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Frame around images inside cards */
+.image-frame {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    padding: 10px;
+    border: 4px solid #ff4d6d; /* Valentine's red frame */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Scrollable Card Row */
+
+/* Ensure flex container has proper spacing */
+.row {
+    display: flex;
+    gap: 30px; /* Increases gap between cards */
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    cursor: grab;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Hide scrollbar */
+.row::-webkit-scrollbar {
+    display: none;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff4d6d;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.read-more:hover {
+    background: #e63950;
+}
+/* Add spacing between cards */
+.card {
+    min-width: 250px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px; /* Adds spacing between cards */
+}
+.card:nth-child(1) { width: 250px; height: 420px; }
+.card:nth-child(2) { width: 300px; height: 460px; }
+.card:nth-child(3) { width: 275px; height: 435px; }
+.card:nth-child(4) { width: 320px; height: 450px; }
+.card:nth-child(5) { width: 280px; height: 400px; }
+.card:nth-child(6) { width: 250px; height: 410px; }
+.card:nth-child(7) { width: 300px; height: 420px; }
+.card:nth-child(8) { width: 275px; height: 395px; }
+.card:nth-child(9) { width: 320px; height: 420px; }
+.card:nth-child(10) { width: 280px; height: 410px; }
+/* Different rotation angles */
+.card:nth-child(1) { transform: rotate(-5deg); }
+.card:nth-child(2) { transform: rotate(3deg); }
+.card:nth-child(3) { transform: rotate(-7deg); }
+.card:nth-child(4) { transform: rotate(3deg); }
+.card:nth-child(5) { transform: rotate(-7deg); }
+.card:nth-child(6) { transform: rotate(-5deg); }
+.card:nth-child(7) { transform: rotate(3deg); }
+.card:nth-child(8) { transform: rotate(-7deg); }
+.card:nth-child(9) { transform: rotate(3deg); }
+.card:nth-child(10) { transform: rotate(-7deg); }
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.1) rotate(0deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Center Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    /* Flexbox for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Flip Animation */
+@keyframes flipIn {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+/* Modal Content Styling */
+/* Modal Content (Centered) */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto; /* Enables vertical scroll when content exceeds max height */
+    text-align: justify;
+    position: relative;
+    transform-origin: center;
+    animation: flipIn 0.5s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    /* Ensure centering even if flexbox has issues */
+    margin: auto;
+}
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+.close:hover {
+    color: #ff7eb3;
+}
+
+/* Modal Image Container */
+/* Modal Image Container */
+.modal-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.modal-img-container img {
+    width: 90%;
+    max-width: 250px;
+    border-radius: 12px;
+    border: 5px solid #ff7eb3;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modal Text */
+.modal-content h5 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ff4d6d;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #333;
+}
+.next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4d6d;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #e03e5c;
+}
+

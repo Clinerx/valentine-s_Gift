@@ -1,0 +1,228 @@
+/* Valentine's Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* Reset and Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --valentine-red: #e63946;
+    --valentine-pink: #ff758f;
+    --valentine-light-pink: #ffb3c1;
+    --valentine-white: #fff0f3;
+    --valentine-purple: #9b5de5;
+    --valentine-dark: #6d6875;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--valentine-white);
+    
+    /* Page Transition Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+/* Valentine's Day Title */
+.valentineTitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    color: var(--valentine-red);
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeInTitle 1.5s ease-in-out;
+}
+
+/* Main Gift Card */
+.valentineGiftCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+    gap: 5px;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: width 1.2s ease-in-out;
+}
+
+/* Left & Right Covers */
+.valentineCoverLeft, .valentineCoverRight {
+    flex: 1;
+    height: 100%;
+    background-color: var(--valentine-red);
+}
+
+.valentineCoverLeft {
+    border-radius: 0 20% 20% 0;
+}
+
+.valentineCoverRight {
+    border-radius: 20% 0 0 20%;
+}
+.heartClickCover {
+    outline: none;
+    user-select: none; /* Prevent text selection */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    cursor: pointer;
+    height: 120px;
+    background-color: var(--valentine-pink);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    animation: heartPump 1.5s infinite ease-in-out;
+}
+
+/* Hover Effect */
+.heartClickCover:hover {
+    background-color: var(--valentine-light-pink);
+    transition: background-color 0.3s ease-in-out;
+}
+.heartClickCover:hover::before,
+.heartClickCover:hover::after {
+    background-color: var(--valentine-light-pink);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Fix the text placement */
+.heartText {
+    position: absolute;    
+    top: 41%;
+    font-size: clamp(18px, 3vw, 24px); /* Responsive font size */
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    outline: none;
+    user-select: none; /* Prevent text selection */
+    pointer-events: none; /* Prevents interaction issues */
+}
+.heartClickCover:focus {
+    outline: none;
+}
+
+
+/* Heart Shape */
+
+.heartClickCover::before,
+.heartClickCover::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: var(--valentine-pink);
+    border-radius: 50%;
+}
+
+.heartClickCover::before {
+    top: -60px;
+    left: 0;
+}
+
+.heartClickCover::after {
+    left: 60px;
+    top: 0;
+}
+
+/* Text Inside Heart */
+.heartText {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    animation: fadeText 1.5s infinite;
+}
+
+/* Hover Effect */
+.heartClickCover:hover {
+    transform: translate(-50%, -50%) rotate(-45deg) scale(1.2);
+}
+
+/* Heart Pump Animation */
+@keyframes heartPump {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-45deg) scale(1.1);
+    }
+}
+
+/* Fading Text Animation */
+@keyframes fadeText {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Page Fade-in & Slide-up Animation */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in Title Animation */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .valentineTitle {
+        font-size: 32px;
+    }
+    .heartText{
+        font-size: 25px;
+    }
+    .valentineGiftCard {
+        width: 90%;
+        height: 300px;
+    }
+    .heartClickCover {
+        width: 80px;
+        height: 80px;
+    }
+    .heartClickCover::before,
+    .heartClickCover::after {
+        width: 80px;
+        height: 80px;
+    }
+    .heartClickCover::before {
+        top: -40px;
+    }
+    .heartClickCover::after {
+        left: 40px;
+    }
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Card</title>
+    <link rel="stylesheet" href="nextPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card" onclick="openModal('modal1')">
+                <div class="image-frame">
+                    <img src="8.jpg" alt="Valentine 1">
+                </div>
+                <h2>"Our First Date" 💖</h2>
+                <p>"First Memory Together "</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <div class="card" onclick="openModal('modal2')">
+                <div class="image-frame">
+                    <img src="2.jpg" alt="Valentine 2">
+                </div>
+                <h2>"Our First Celebration of Love💖"</h2>
+                <p>"Every moment with you is a moment I cherish."</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <div class="card" onclick="openModal('modal3')">
+                <div class="image-frame">
+                    <img src="3.jpg" alt="Valentine 3">
+                </div>
+                <h2>"A Promise Fulfilled, A Dream Realized"</h2>
+                <p>"Our love story is my favorite. Happy Valentine's Day!"</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <div class="card" onclick="openModal('modal4')">
+                <div class="image-frame">
+                    <img src="4.jpg" alt="Valentine 4">
+                </div>
+                <h2>"First Day in Your House" ❤️</h2>
+                <p>"No matter what happens, you will always be my person."</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <div class="card" onclick="openModal('modal5')">
+                <div class="image-frame">
+                    <img src="5.jpg" alt="Valentine 5">
+                </div>
+                <h2>Dreams Under the Balayong 💖</h2>
+                <p>"With you, every day feels like Valentine's Day!"</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="card" onclick="openModal('modal6')">
+                <div class="image-frame">
+                    <img src="6.jpg" alt="Valentine 5">
+                </div>
+                <h2>Encouragement 💖</h2>
+                <p>"With you, every day feels fantastic"</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="card" onclick="openModal('modal7')">
+                <div class="image-frame">
+                    <img src="7.jpg" alt="Valentine 5">
+                </div>
+                <h2>"Our First Christmas Together 💖"</h2>
+                <p>"With you, I felt Happy!"</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="card" onclick="openModal('modal8')">
+                <div class="image-frame">
+                    <img src="1.jpg" alt="Valentine 5">
+                </div>
+                <h2>"Simple Moments" 💖</h2>
+                <p>"Happy moments lead us to a better memories "</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="card" onclick="openModal('modal9')">
+                <div class="image-frame">
+                    <img src="9.jpg" alt="Valentine 5">
+                </div>
+                <h2>"Simple Prayers💖"</h2>
+                <p>"Simple but God's Blessings"</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="card" onclick="openModal('modal10')">
+                <div class="image-frame">
+                    <img src="10.jpg" alt="Valentine 5">
+                </div>
+                <h2>"The Quiet Goodbye"</h2>
+                <p>"Long distance doesn't break us"</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </div>
+    <a href="finalMessage.html" class="next-button">Next →</a>
+    <!-- Modals -->
+    <style>
+        .heart-button {
+            font-size: 24px;
+            color: gray;
+            cursor: pointer;
+            transition: color 0.3s;
+            border: none;
+            background: none;
+        }
+        .heart-button.liked {
+            color: red;
+        }
+    </style>
+    
+    <script>
+        function toggleLike(button) {
+            if (button.innerHTML === "🩶") {
+                button.innerHTML = "❤️";
+            } else {
+                button.innerHTML = "🩶";
+            }
+        }
+    </script>
+    
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h5>Happy Valentine's Day! 💖</h5>
+            <div class="modal-img-container">
+                <img src="8.jpg" alt="Valentine 1">
+            </div>
+            <h2>"Our First Date"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">From the moment I saw you, I was struck by something beyond your beauty, something fragile and real. It was like seeing the world for the first time—familiar yet entirely new. Your eyes, shy and unsure, caught mine, and for a fleeting second, the world around us seemed to pause. <br><br>
+                We sat across from each other, each of us too nervous to speak, our words trapped somewhere between our hearts and our tongues. The silence wasn't awkward, though—it was filled with the unspoken, the quiet understanding that this moment was special. <br><br>
+                And then, without a word, your hand reached out, ever so gently, and I couldn't help but take it. The warmth of your touch was electric, and as our fingers intertwined, I felt both a rush of excitement and a calming sense of peace. It was as if we were two strangers, yet in that touch, we had known each other forever. <br><br>
+                Your shyness mirrored mine, but it only made the connection more beautiful, more tender. There, in that shared moment, we didn’t need to say anything to know that something had changed. I saw the vulnerability in your eyes, the slight tremble in your hand, and in that instant, I realized that you were as nervous as I was, yet we were both brave enough to be here. <br><br>
+                In the midst of the quiet, I understood—your beauty wasn't just in your smile or the way the light caught your hair, but in the way you let me in, despite your fears. And as we sat there, hands still intertwined, I knew this would be a memory we’d carry with us—a beautiful, fragile start to something that felt as soft and delicate as the moment we first held hands.</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h5>"My Heart is Yours "❤️</h5>
+            <div class="modal-img-container">
+                <img src="2.jpg" alt="Valentine 2">
+            </div>
+            <h2>"Our First Date"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"It was Valentine's Day, and the air felt lighter as we walked together, our hands naturally finding each other’s. The warmth of your touch made everything feel right, as if the world had slowed down just for us. We didn’t need fancy gifts or grand gestures—just being side by side was enough. With every step, laughter filled the space between us, making the day even more special. Your sister Jasmine walked behind, following us from time to time, but it only made the moment sweeter. <br><br>
+
+                The long walk felt effortless, like time didn’t matter as long as we were together. The simple joy of being close, of sharing smiles and glances, was more than enough to make this day unforgettable. As the sun began to set, painting the sky with soft colors, I squeezed your hand a little tighter, silently thanking the universe for this moment. It was our first Valentine's together, but I knew it wouldn’t be our last. </p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h5>Forever Love 💞</h5>
+            <div class="modal-img-container">
+                <img src="3.jpg" alt="Valentine 3">
+            </div>
+            <h2>"A Promise Fulfilled, A Dream Realized"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"The day you took your oath as a licensed teacher, I was in awe. Watching you stand tall, with a proud smile, holding your certificate, I felt my heart swell with admiration. It was like witnessing a dream come true, not just for you, but for us, for all the late-night talks, the encouragement, and the sacrifices. I couldn’t wait to celebrate your achievement, to give you flowers, and to show you how incredibly proud I was of you. You’ve worked so hard for this moment, and now it was your time to shine. <br><br>
+
+                Later that day, we met your family for the first time, and it was a beautiful moment. Seeing you laugh and interact with them made me realize how much you’re loved and how lucky I am to be a part of your journey. The warmth, the joy, and the pride in your family’s eyes made everything feel even more special. It was splendid, a day that I’ll always treasure—celebrating not just your success, but our growing bond. </p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h5>You & Me ❤️</h5>
+            <div class="modal-img-container">
+                <img src="4.jpg" alt="Valentine 4">
+            </div>
+            <h2>"First Time in Your House"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"The moment we stepped into your humble home, it felt like everything I had ever wanted. The sweet aroma of your favorite dishes filled the air as we spent the afternoon laughing over movies, lost in our own little world. Every glance, every touch, seemed to bring us closer, and I couldn't resist stealing a kiss every chance I got. The house may not have been grand, but it was filled with warmth, love, and the kind of happiness that made everything feel perfect. In that small space, I found more than I ever imagined: a future with you. <br><br>
+
+                As the evening went on, I helped with the little chores, and you smiled at every gesture. We cooked together, and every moment felt like it was straight out of a dream. The simplicity of the house didn’t matter, because with you, it was the most beautiful place in the world. I realized that this was the start of something special, where every day felt like home, as long as we were together."</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h5>Forever Together 💖</h5>
+            <div class="modal-img-container">
+                <img src="5.jpg" alt="Valentine 5">
+            </div>
+            <h2>"Dreams Under the Balayong"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"As we sat beneath the towering Balayong tree, the gentle breeze whispered around us, and the soft murmur of the park’s surroundings only seemed to make the moment more intimate. We laughed about the little things, teasing each other in the way that only lovers can, but then I began to share something deeper—my dream wedding. It wasn’t about the grand ceremony or the perfect dress, but about the person standing beside me. My words flowed as I spoke of how I envisioned spending my life with someone special, and as I talked, I realized with a sudden, overwhelming clarity that you were the one. The thought of you beside me in my future made my heart swell with emotion, and I felt my eyes well up with tears of joy. You didn’t just fit into my dream—you were the dream. <br><br>
+
+                There, under the shade of the Balayong, I shared my heart in a way I hadn’t expected. We talked about life, love, and what the future might hold, but it wasn’t just a conversation; it was a promise, an unspoken bond that no words could fully capture. You listened, your eyes soft and full of understanding, and I knew then that I didn’t want anyone else by my side. The thought of you being in my future filled me with a sense of peace and excitement I had never felt before, and in that moment, I realized that my dream wedding wasn’t just about a celebration—it was about a lifetime with you."</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Forever Together 💖</h2>
+            <div class="modal-img-container">
+                <img src="6.jpg" alt="Valentine 5">
+            </div>
+            <h2>"Shy Smiles and Smashes: A Love Game"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"Even though you didn’t shout or make a big fuss, I could feel your presence with every step I took on the court. Your quiet focus on me gave me a sense of strength, as if your gaze alone was cheering me on. Each time I hit the shuttlecock, I couldn’t help but steal a glance at you, seeing the admiration in your eyes that made me believe in myself just a little more. You laughed softly, your support never loud but always there, making me feel braver, even in my quiet moments.
+                <br><br>
+                It wasn’t just about playing badminton anymore—it was about feeling seen in the most beautiful way. When I managed that perfect smash, your eyes lit up with such genuine joy, and I realized that your encouragement went beyond the game. In that moment, you made me feel like I could conquer anything, and it was more than just the sport—it was your quiet belief in me that turned me into a champion."</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h5>A Christmas to Remember💖</h5>
+            <div class="modal-img-container">
+                <img src="7.jpg" alt="Valentine 5">
+            </div>
+            <h2>"Our First Christmas Together"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"It was our first Christmas together, and everything felt perfect. We spent the day with friends, laughing and chatting over hot cocoa. The cold air and the twinkling lights made everything feel extra special, even when we were just walking around the neighborhood. As we strolled, our hands brushed, and without saying anything, you took my hand in yours. It felt so right, like the world had paused just for us.
+                <br><br>
+                Later that night, we had a small argument about something silly, but it didn’t last long. Even though we disagreed for a moment, I couldn’t help but smile. The night was still amazing because we had each other, and that made everything better. Despite the little disagreement, it was a Christmas I knew I’d always remember."</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h5>Best Day 💖</h5>
+            <div class="modal-img-container">
+                <img src="1.jpg" alt="Valentine 5">
+            </div>
+            <h2>"Simple Moments"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"It was a sunny afternoon when we decided to take a walk along the baywalk, just me, you, and your family. The breeze was gentle, and the sound of the waves crashing made everything feel peaceful. We held hands, enjoying the simplicity of the moment, no cars, no rush, just walking and talking. Your family was warm, and the little things, like laughing together and sharing stories, made me realize how much I loved being with them. It felt like home, even though we didn’t have much.
+                <br></br>
+                As we strolled, we passed a woman asking for money, but her approach was so over-the-top that it made me chuckle. It was almost like she was trying too hard, and the way she asked just felt funny. You noticed it too, and I could see the smile on your face as we kept walking. It wasn’t anything to get worked up about; we just kept enjoying the day, realizing that even in simple moments, we were already rich in what truly mattered."</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <h5>Thanking God 💖</h5>
+            <div class="modal-img-container">
+                <img src="9.jpg" alt="Valentine 5">
+            </div>
+            <h2>"A Simple Prayer"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"We walked to church together, hand in hand, the cool morning breeze making our steps light. The sun was barely up, casting a warm glow over the small, humble buildings around us. As we sat quietly in the pew, I whispered a prayer of thanks for everything we had, especially for him by my side. I didn't need anything more than this moment with him, a soft smile shared between us, our hands quietly intertwined.
+                <br><br>
+                After the service, we stepped out into the street, our hearts full from the words spoken in church and the peace between us. We didn’t have much—no fancy cars or wealth to boast—but in this simple life, with him, I felt like the luckiest person alive. We smiled at each other again, knowing we didn’t need anything else but each other to make the day perfect."</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+        </div>
+    </div>
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <h5>"Saying Goodbyes" 😭</h5>
+            <div class="modal-img-container">
+                <img src="10.jpg" alt="Valentine 5">
+            </div>
+            <h2>"The Quiet Goodbye"</h2>
+            <p style="font-family: Raleway, sans-serif; font-weight: 500;">"As I packed my things and said my goodbyes, there was a bittersweet feeling settling in my chest. The thought of us being apart again after all the moments we've shared was hard to swallow. Our time together always felt too short, like there was never enough of it. As I drove away, the silence in the bus seemed to echo the quiet spaces now between us. I couldn't help but miss your presence—the way you filled the room with warmth, the little things that made everything feel right. It was only in the quiet of my home that I realized how peaceful it was when I was with you.
+                <br><br>
+                Being back at my place felt different. The walls seemed emptier, the bed quieter, and even the air felt still. We didn't need much—just our time together, no fancy things or big gestures, just the comfort of each other’s company. I couldn't help but smile through the sadness, thinking of all the memories we made. The distance between us now only made me appreciate you more. I knew this wasn’t the end, but it didn’t stop me from wishing it could be different."</p>
+            <button class="heart-button" onclick="toggleLike(this)">♡</button>
+            
+        </div>
+
+    </div>
+
+
+    
+    
+    <audio id="valentineMusic" loop>
+        <source src="bensound-love.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const audio = document.getElementById("valentineMusic");
+    
+            // Attempt to play the audio when the user interacts
+            document.body.addEventListener("click", function() {
+                if (audio.paused) {
+                    audio.play().catch(error => console.log("Autoplay blocked:", error));
+                }
+            }, { once: true }); // Ensures it only triggers once
+        });
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                const audio = document.getElementById("valentineMusic");
+                audio.play().catch(error => console.log("Autoplay blocked:", error));
+            }, 2000); // 2 seconds delay
+        });
+
+        
+        
+        
+    </script>
+    
+
+    <script src="nextPage.js"></script>
+</body>
+</html>
